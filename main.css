@@ -1,34 +1,39 @@
 
 
-#card-wrapper{
+
+
+#row1, #row2 {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.dell-xps13, .dell-xps15 .dell-inspiron-14{
   flex-basis: 33.333%;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-bottom: 5em;
 
-  img{
+   img{
     width: 288px;
     height: 200px;
+    align-items: center;
   }
+
+  .card-text{
+    max-width: 200px;
+    text-align: center;
+   }
+
+.card-title {
+  border: solid 1px lightblue;
 }
 
-.dell-inspiron-15, .dell-latitude-7450, .dell-latitude-5550 {
-  flex-basis: 33.333%;
-  justify-content: center;
-  align-items: center;
-
-  img{
-  width: 288px;
-  height: 200px;
-}
 }
 
-.card-text {
- max-width: 200px;
- text-align: center;
+.specifications {
+  text-decoration: underline;
+}
+
+.spec-list {
+  list-style: none;
+}
+
+.pricing, .spec-list {
+  font-weight: bold;
 }
